@@ -1,0 +1,24 @@
+/* custom-editor-style.css */
+
+body#tinymce.wp-editor { 
+  font: 400 normal 1rem/1.7rem 'open_sansregular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: hsla(27, 100%, 7%, 1);
+  margin: 10px; 
+}
+ 
+
+body#tinymce.wp-editor a {
+  color: #0275d8;
+}
+
+body#tinymce.wp-editor h1, 
+body#tinymce.wp-editor h2, 
+body#tinymce.wp-editor h3, 
+body#tinymce.wp-editor h4, 
+body#tinymce.wp-editor h5, 
+body#tinymce.wp-editor h6,
+body#tinymce.wp-editor blockquote {
+    font-family: 'Ubuntu', Verdana, Tahoma, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana Ref", sans-serif;
+    font-weight: 300;
+    color: hsla(27, 96%, 28%, 1);
+}
