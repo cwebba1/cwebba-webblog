@@ -1,2 +1,2 @@
-# cwebba-webblog
-Gulpfile.js 04 for WordPress
+# webblog-cwebba-02
+Revised WordPress Theme
