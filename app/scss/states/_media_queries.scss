@@ -25,7 +25,7 @@
   }
 
   .top ul li:hover a, .top li:hover li a {
-    font-family: Verdana, Geneva, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: $head-ft;
     line-height: 1.375em;
   }
 
@@ -33,10 +33,6 @@
     width: 12.5em;
   }
 
-  .me-menu-pic {
-    padding-bottom: 0;
-    clear: right;
-  }
 }
 
 @media only screen and (min-width: 400px) {
@@ -57,15 +53,6 @@
 
 } 
 
-@media only screen and (min-width: 480px) {
-  .portrait {
-    height: 700px;
-  }
-
-  .landscape {
-    height: 250px;
-  }
-}
 @media only screen and (min-width: 560px) {
 
   .top a:link, .top a:visited {
@@ -93,9 +80,6 @@
   font-size: 0;
     width: 100%;
     height: 1em;
-    -o-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
 /*  .top ul {
@@ -105,33 +89,7 @@
   height: 5.75em;
   }
 */
-.projectthumbs div {
-  display: inline-block;
-  width: 46%;
-  margin-right: 6%;
-  vertical-align:top;
-}
 
-  .projectthumbs div:nth-child(2n) {
-    margin-right: 0;
-  }
-
-  .portrait {
-    height: 400px;
-  }
-
-  .landscape {
-    height: 200px;
-  }
-}
-@media only screen and (min-width: 760px) {
-  .portrait {
-    height: 450px;
-  }
-
-  .landscape {
-    height: 140px;
-  }
 }
 @media only screen and (max-width: 800px) {
   .fancybox-prev {
@@ -142,65 +100,7 @@
     display: none;
   }
 }
-@media screen and (min-width: 921px), print {
-  .portrait {
-    height: 420px;
-  }
-
-  .landscape {
-    height: 130px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .portrait {
-    height: 300px;
-  }
-
-  .landscape {
-    height: 130px;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .projectthumbs div {
-    display: inline-block;
-    width: 30.6%;
-    margin-right: 3%;
-  }
-
-  .projectthumbs div:last-of-type {
-    margin-right: 0;
-  }
-
-  .projectthumbs div:nth-child(2n) {
-    margin-right: 3%;
-  }
-
-  .projectthumbs div:nth-child(3n) {
-    margin-right: 0;
-  }
-}
-@media only screen and (min-width: 1240px) {
-  .portrait {
-    height: 320px;
-  }
-}
 /* _media_queries.scss */
-/* ======= [ Media Queries ]  =========== */
-@media only screen and (min-width: 1421px) {
-  .workbook li {
-    height: auto;
-  }
-}
-@media screen and (max-width: 1420px) {
-  .workbook li {
-    height: 8em;
-  }
-}
-@media screen and (max-width: 1250px) {
-  .workbook li {
-    height: 9.5em;
-  }
-}
 
 @media screen and (min-width: 600px) {
   .wide-navserv {
@@ -214,26 +114,12 @@
     width: 63%;
     float: left;
     margin: 0;
-    -o-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
   .wide-move {
     width: 35%;
     float: left;
     margin-right: 2%;
-  }
-
-ul.footsy li {
-  display: table-cell;
-  text-align: center;
-  width: 19.5%;
-}
-
-  .footsy a, .footsy a:visited {
-  font-size: .875em;
-  padding: .425em 8%;
   }
 
 }
@@ -244,9 +130,6 @@ ul.footsy li {
     width: 44%;
     float: left;
     margin-right: 2%;
-    -o-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
 
@@ -311,24 +194,6 @@ margin-right:.125em;
   }
 }
 
-@media screen and (max-width: 950px) {
-  #modal_box {
-    width: 75%;
-    top: 5%;
-    left: 12.5%;
-  }
-
-  #map_box {
-    width: 80%;
-    top: 10%;
-    left: 10%;
-  }
-
-  .receive {
-    float: left;
-    width: 75%;
-  }
-}
 @media screen and (min-width: 980px) {
   /* squish in for first and last child */
   .top:first-child > li {
@@ -372,8 +237,6 @@ margin-right:.125em;
     *display: inline;
   }
 
-  .landpage,
-  .main-art-content,
   .main-content {
     margin: 0;
     width: 100%;
@@ -396,25 +259,6 @@ margin-right:.125em;
     display: inline-block;
   }
   
-  .footmove {
-    width: 48%;
-    float: left;
-  }
-
-  .newslet {
-    width: 49%;
-    float: right;
-    margin-right: .5em;
-  }
-
-  .join {
-    width: 48%;
-    float: right;
-    text-align: center;
-    margin-right: 2%;
-    margin: .75em 2% 1em auto;
-  }
-
   .services-art p,
   .services p {
     font-size: .8375em;
@@ -435,10 +279,6 @@ margin-right:.125em;
     margin-bottom: .5em;
   }
 
-  .workbook li {
-    height: 8.5em;
-  }
-
   /* Contact Page*/
   .formbox {
     width: 100%;
@@ -455,15 +295,6 @@ margin-right:.125em;
   }
 
   .addresscolumns {
-    -webkit-column-count: 2;
-    -webkit-column-gap: 1em;
-    -webkit-column-rule: 0;
-    -moz-column-count: 2;
-    -moz-column-gap: 1em;
-    -moz-column-rule: 0;
-    -ms-column-count: 2;
-    -ms-column-gap: 1em;
-    -ms-column-rule: 0;
     column-count: 2;
     column-gap: 1em;
     column-rule: 0;
@@ -582,25 +413,8 @@ margin-right:.125em;
     border: 1px solid #c4c8cc;
   }
 }
+
 @media screen and (max-width: 800px) {
-  .footmove {
-    width: 46%;
-    float: left;
-  }
-
-  .newslet {
-    width: 51%;
-    float: right;
-  }
-
-  .join {
-    width: 46%;
-    float: right;
-    text-align: center;
-    margin-right: 2%;
-    margin: .75em 2% 1em auto;
-  }
-
   .mcap {
     width: 75%;
     /* for instance*/
@@ -628,24 +442,6 @@ margin-right:.125em;
   }
 }
 @media screen and (max-width: 768px) {
-  .footmove {
-    width: 52%;
-    float: left;
-  }
-
-  .newslet {
-    width: 44%;
-    float: right;
-  }
-
-  .join {
-    width: 40%;
-    float: right;
-    text-align: center;
-    margin: .75em 2.5% 1em auto;
-    margin-right: 2.5%;
-  }
-
   #fieldset {
     width: 80%;
     border: none;
@@ -680,9 +476,6 @@ margin-right:.125em;
   .herobox-clear,
   .herobox {
     margin-bottom: 1em;
-    -o-transition: margin .25s ease-in;
-    -moz-transition: margin .25s ease-in;
-    -webkit-transition: margin .25s ease-in;
     transition: margin .25s ease-in;
   }
 
@@ -703,37 +496,10 @@ margin-right:.125em;
   }
 }
 @media only screen and (max-width: 684px) {
-  .footmove {
-    width: 59%;
-    float: left;
-  }
-
-  .newslet {
-    width: 37%;
-    float: right;
-  }
-
-  .join {
-    width: 34%;
-    float: right;
-    text-align: center;
-    margin-right: 2.5%;
-  }
-
   .concept {
     font-size: .6375em;
     line-height: 1.375em;
     margin: .5em 0 .25em;
-  }
-
-  .workbook li {
-    width: 30%;
-    margin-right: 4.5%;
-    display: inline-block;
-  }
-
-  .workbook li {
-    height: 10.5em;
   }
 
   .me-menu-pic {
@@ -751,32 +517,6 @@ margin-right:.125em;
     width: 100%;
   }
 
-  .footmove {
-    width: 100%;
-    float: none;
-  }
-
-  .newslet {
-    width: 100%;
-    float: none;
-  }
-
-  .newslet p {
-    width: 22%;
-    float: left;
-  }
-
-  .socialnav {
-    width: 98%;
-  }
-
-  .join {
-    width: 98%;
-    float: none;
-    text-align: center;
-    margin: .75em auto 1em;
-  }
-
   figure.w250 {
     max-width: 100%;
     width: 100%;
@@ -786,37 +526,6 @@ margin-right:.125em;
 
   .collapse.in {
     height: 0;
-  }
-
-  .inset2 {
-    width: 100%;
-    display: inline-block;
-  }
-
-  span.learn {
-    display: inline;
-    font-size: .625em;
-    line-height: 1.5em;
-    padding: .25em 2%;
-    border: 1px solid #EB6DFCB;
-    background: rgba(148, 209, 179, 0.3);
-    margin: .125em 2% 2.15em 0;
-    -webkit-border-radius: .5em;
-    -moz-border-radius: .5em;
-    border-radius: .5em;
-  }
-
-  span.learn:hover {
-    background: rgba(255, 221, 51, 0.5);
-  }
-
-  .triad {
-    width: 30%;
-    margin: auto;
-    margin-bottom: 0;
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
   }
 
   .wide-services {
@@ -856,43 +565,8 @@ margin-right:.125em;
   }
 }
 @media only screen and (max-width: 560px) {
-  .triad figure {
-    margin-bottom: 0;
-  }
-
-  .workbook li {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 1em;
-    display: block;
-    height: auto;
-  }
-/*
-  .top ul li:hover a, .top li:hover li a {
-    font-family: 'Ubuntu', Verdana, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana Ref", sans-serif;
-    font-weight: 500;
-    padding-left: 7%;
-  }
-
-  .top ul li a:hover {
-    width: 10.75em;
-    line-height: 1em;
-  }
-*/
   .last span {
     display: none;
   }
 
-  .addresscolumns {
-    -webkit-column-count: 1;
-    -webkit-column-gap: 1em;
-    -webkit-column-rule: 0;
-    -moz-column-count: 1;
-    -moz-column-gap: 1em;
-    -moz-column-rule: 0;
-    column-count: 1;
-    column-gap: 1em;
-    column-rule: 0px;
-    padding: .5em 2em .25em;
-  }
 }

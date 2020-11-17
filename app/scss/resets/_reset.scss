@@ -20,7 +20,6 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-*behavior: url(/assets/javascripts/master-scripts/boxsizing.htc);
 }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -29,7 +28,6 @@ html {
   }
 
 .unborderbox { box-sizing: content-box;
-*behavior: url(/js/master-scripts/boxsizing.htc);
 }
 
 body, nav, ul, li, a  {margin: 0; padding: 0;}

@@ -14,12 +14,12 @@
 <p><strong>Craig Webb Art</strong> provides all aspects of New Business Communications Development including project management, creative development, copywriting and graphic design.</p>
 
 <nav class="workbook">
-<ul><li><h5><a href="http://craigwebbart.com/work_artdirection.htm">Graphic Design</a></h5>
-<p class="p12">Creative concepts and persuasive visual design solutions that rock across media.</p>
-</li><li><h5><a href="http://craigwebbart.com/work_written_content.htm">Copywriting</a></h5>
-<p class="p12">Compelling messages that grab attention, tell great stories and target consumers.</p>
+<ul><li><h5><a href="graphic-design.html">Graphic Design</a></h5>
+<p class="p14">Visual design solutions that rock across media</p>
+</li><li><h5><a href="written-content.html">Copywriting</a></h5>
+<p class="p14">Compelling messages that grab attention and tell great stories</p>
 </li><li class="last">
-<h5><a href="http://craigwebbart.com/work_web.htm">Internet Design</a></h5>
-<p class="p12">Delightful interactive experiences that support business objectives and user needs.</p>
+<h5><a href="web-design.html">Internet Design</a></h5>
+<p class="p14">Clear clean communications</p>
 </li></ul>
 </nav>

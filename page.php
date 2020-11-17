@@ -6,6 +6,7 @@
  * @since 1.0
  */
 get_header(); ?>
+<!-- /* page.php 110920 */ -->
 <!-- /* page.php 091716 */ -->
 <!-- /* page.php 103016 */ -->
 
@@ -22,6 +23,8 @@ get_header(); ?>
 	<div class="clear"></div>
 	        <?php endwhile; ?>                
                 <?php else: ?>
+                    <p>No content has been posted to this page.</p>                    
+           	<?php endif; ?>                           
 </div><!-- END post-class -->
 
 <?php get_template_part( 'partials/portfolioblock' ); ?>
@@ -31,5 +34,3 @@ get_header(); ?>
 <div class="clear"></div>
 
 <?php get_footer(); ?>
-
-

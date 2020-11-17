@@ -1,10 +1,25 @@
 <?php
+/**
+ * Twenty Twenty functions and definitions
+ *
+ * @link http://CraigWebbArt.com/
+ *
+ * @package WordPress
+ * @subpackage Cwebba
+ * @since Cwebba 1.0
+ */
+
+
+
+/**
+// functions.php 111520
+// functions.php 110920
 // functions.php 100916
 // functions.php 100216
 // functions.php 092716
 // functions.php 091816
 // functions.php 091616
-
+ */
 
 /** Add theme-supported features. */
 add_action( 'after_setup_theme', 'cwebba_setup');
@@ -17,31 +32,49 @@ function cwebba_setup() {
 
     /* Registers theme support for a given feature. */
     add_theme_support( 'post-formats' );
+
+// These two functions are A: not working and B: not in use
+//     The $args variables need to be defined as an array.
+// See: https://codex.wordpress.org/Custom_Headers for example
     /* Registers theme support for using an image for the header. */
-    add_theme_support( "custom-header", $args );
+ //   add_theme_support( "custom-header", $args );
     /* Registers theme support for using an image for background images or solid background colors. */
-    add_theme_support( "custom-background", $args );
+//    add_theme_support( "custom-background", $args );
     /* Registers theme support for Automatic Feed Links for post and comment in the head. */
     add_theme_support( 'automatic-feed-links' );
 
 // Add Title Function
 add_theme_support( 'title-tag' );
 
-if ( ! isset( $content_width ) ) {
-    $content_width = 1600;
-};
-
     /*
      * Switch default core markup for search form, comment form, and comments
      * to output valid HTML5.
      */
-    add_theme_support( 'html5', array(
-        'search-form',
-        'comment-form',
-        'comment-list',
-        'gallery',
-        'caption',
-    ) );
+    /*
+     * Switch default core markup for search form, comment form, and comments
+     * to output valid HTML5.
+     */
+add_theme_support( 'html5', array(
+    // Any or all of these.
+    'comment-list', 
+    'comment-form',
+    'search-form',
+    'gallery',
+    'caption',
+) );
+
+function html5_insert_image($html, $id, $caption, $title, $align, $url, $alt) {
+  $html5 = "<figure id='post-$id media-$id' class='align-$align'>";
+  $html5 .= "<img src='$url' alt='$title' />";
+  if ($caption) {
+    $html5 .= "<figcaption>$caption</figcaption>";
+  }
+  $html5 .= "</figure>";
+  return $html5;
+}
+add_filter( 'image_send_to_editor', 'html5_insert_image', 10, 9 );
+
+
 
     // Registers theme support for Featured images to custom Posts, Pages and Backgrounds
     add_theme_support( 'post-thumbnails' );
@@ -73,7 +106,7 @@ $args = array(
     'uploads'       => true,
 );
 add_theme_support( 'custom-navpics', $args );
-}
+};
 
 // SEAN DUFFY RANDOM HEROPICS
 function get_hero_image_src(){
@@ -107,7 +140,13 @@ function get_hero_image_src(){
     }
     $index = rand(0, count($images)-1);
     return $images[$index];
-}
+};
+
+if ( ! isset( $content_width ) ) {
+    $content_width = 1600;
+};
+
+
 
 }/* END OF THEME SETUP */
 
@@ -143,20 +182,20 @@ function load_fonts() {
     wp_register_style('et-googleFonts', '//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Ubuntu:400,200,300,600');
     wp_enqueue_style( 'et-googleFonts');
 }
-
-wp_register_style('icon-font', get_template_directory_uri().'/assets/css/cwebba-b.css');
-wp_enqueue_style('icon-font', get_template_directory_uri().'/assets/css/cwebba-b.css');
 add_action('wp_print_styles', 'load_fonts');
 
 
 /** Enqueue all scripts and styles.
 *   https://developer.wordpress.org/reference/functions/wp_enqueue_script/#Notes
 */
+    // USE THIS FOR OTHER SCRIPTS    wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/example.js', array(), '1.0.0', true );
 
 function cwebba_scripts() {
-  wp_enqueue_style( 'app/css/style.css', get_stylesheet_uri() );
+  wp_enqueue_style( 'style.css', get_stylesheet_uri() );
+wp_enqueue_style( 'lightbox-02', get_template_directory_uri() . '/assets/css/lightbox02.css',false,'1.1','all');
   wp_enqueue_script( 'jquery' );
-    // USE THIS FOR OTHER SCRIPTS    wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/example.js', array(), '1.0.0', true );
+  wp_enqueue_script( 'lightbox-02', get_template_directory_uri() . '/assets/javascripts/masterscripts/lightbox.min.js', array('jquery'), null, true);
+
 }
 add_action( 'wp_enqueue_scripts', 'cwebba_scripts' );
 

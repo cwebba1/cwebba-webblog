@@ -1,4 +1,4 @@
-/* _helpers.scss */
+/* _helpers.scss 110920 */
 
 .mw149 { max-width: 149px;}
 
@@ -17,22 +17,15 @@
 .mw670 { max-width:41.875em;}
 
 .w48p { width:48%;
-  -o-transition:width .25s ease-in, max-width .25s ease-in; 
-    -moz-transition:width .25s ease-in, max-width .25s ease-in; 
-    -webkit-transition:width .25s ease-in, max-width .25s ease-in;
   transition:width .25s ease-in, max-width .25s ease-in; 
 }
 
 .shadow {
 background:hsla(321, 50%, 20%, .8);
--moz-box-shadow: 0 .125em .625em hsla(321, 50%, 20%, 1);
--webkit-box-shadow: 0 .125em .625em hsla(321, 50%, 20%, 1);
 box-shadow: 0 .125em .625em hsla(321, 50%, 20%, 1);
 }
 
 .innershadow { 
--moz-box-shadow: inset 0 0 15px #8C7E73, 0 0 20px #DDD6D5;
--webkit-box-shadow: inset 0 0 15px #8C7E73, 0 0 20px #DDD6D5;
 box-shadow: inset 0 0 15px #8C7E73, 0 0 20px #DDD6D5, inset 0 35px 35px -18px #D2C8C6;
 }
 
@@ -181,40 +174,13 @@ code { color:#900;}
 
 .gra-gradi,
 .join,
-.socialnav a,
-.workbook li { 
-  background-color: #f7f7f7;
- background-image: -webkit-gradient(linear, 50% 0%, 50% 100%,  from(#f7f7f7), to(#e7e7e7));/*OLD Webkit*/
-  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7); 
-background: linear-gradient(#f7f7f7, #e7e7e7);
-color:#432;
-color:hsla(30, 33%, 20%, 1);
+.workbook li {
+  background: #f7f7f7;
+  background: map-get($gradients, gra);
+  color: #432;
+  color: hsla(30, 33%, 20%, 1);
 }
 
-.darkseagreen {
-  background-color: #8FBC8F;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#bfd9bf), to(#8FBC8F));
-  /*OLD Webkit*/
-  background-image: -webkit-linear-gradient(top, #bfd9bf, #8FBC8F);
-  background-image: -moz-linear-gradient(top, #bfd9bf, #8FBC8F);
-  background-image: -ms-linear-gradient(top, #bfd9bf, #8FBC8F);
-  background-image: -o-linear-gradient(top, #bfd9bf, #8FBC8F);
-  background: linear-gradient(#bfd9bf, #8FBC8F);
-}
-
-.cornflowerblue {
-  background-color: #6495ED;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#a4c0f4), to(#76a1ef));
-  /*OLD Webkit*/
-  background-image: -webkit-linear-gradient(top, #a4c0f4, #76a1ef);
-  background-image: -moz-linear-gradient(top, #a4c0f4, #76a1ef);
-  background-image: -ms-linear-gradient(top, #a4c0f4, #76a1ef);
-  background-image: -o-linear-gradient(top, #a4c0f4, #76a1ef);
-  background: linear-gradient(#a4c0f4, #76a1ef);
-}
 
 /* Nuggies */
 
@@ -224,12 +190,8 @@ color:hsla(30, 33%, 20%, 1);
 
 .attachment-category-thumb { 
 background:hsla(204, 9%, 66%, 1);
--moz-box-shadow: 0 .125em .625em hsla(204, 9%, 66%, 1);
--webkit-box-shadow: 0 .125em .625em hsla(204, 9%, 66%, 1);
 box-shadow: 2px 2px 4px hsla(204, 9%, 66%, 1);
 border: 0;
--webkit-border-radius: .5em;
--moz-border-radius: .5em;
 border-radius: .5em;
 }
 

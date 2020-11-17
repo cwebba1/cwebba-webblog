@@ -1,4 +1,5 @@
-<!-- Sidebar.php 090516 -->
+<!-- Sidebar.php 110920
+    Sidebar.php 090516 -->
 <style>
 .cat-item-1 {display:none;}
 </style>
@@ -71,7 +72,7 @@
 </strong></h5>
 </header>
 <div class="colcontain">
-<div class="columns02 sidnavcol gra-gradi">
+<div class="sidnavcol gra-gradi">
 <ul class="list-archives">
 <?php while (have_posts()) : the_post(); ?>
 <li><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
@@ -87,7 +88,7 @@
 </strong></h5>
 </header>
 <div class="colcontain">
-<div class="columns02 sidnavcol gra-gradi">
+<div class="sidnavcol gra-gradi">
 <ul class="list-archives">
 <?php while (have_posts()) : the_post(); ?>
 <li><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
@@ -103,7 +104,7 @@
 </strong></h5>
 </header>
 <div class="colcontain">
-<div class="columns02 sidnavcol gra-gradi">
+<div class="sidnavcol gra-gradi">
 <ul class="list-archives">
 <?php while (have_posts()) : the_post(); ?>
 <li><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>

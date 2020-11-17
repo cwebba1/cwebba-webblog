@@ -1,13 +1,13 @@
-<?php?>
+<?php header("Content-Type: text/html; charset=[your charset]"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 
-<!-- This: header.php 091416
+<!-- This: header.php 110920
+From: header.php 091416
 From: header.php 091116
 From: header.php 090416
 From: header.php 080116

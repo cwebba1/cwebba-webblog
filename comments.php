@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying comments
- *
+ * 110920
  * The area of the page that contains both current comments
  * and the comment form.
  *

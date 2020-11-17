@@ -9,6 +9,7 @@ $theme_version: "2.0";
 $theme_license: "Copyright 2016, 2020 Craig Webb Art";
 $theme_tags: "post-formats";
 $text_domain: "cwebba";
+// 110920
 
 // Icons
 //--------------------------------------------//
@@ -34,8 +35,11 @@ $sunglow: #FFCC33;
 // Helpers:
 
 $bod-ft:'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$bod-it-ft:'open_sanslight_italic', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
 $head-ft: 'Ubuntu', Verdana, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana Ref", sans-serif;
 $mono-ft: "andale mono", "lucida console", monospace, serif;
+$top-ul-ft: Verdana, Geneva, "Helvetica Neue", Helvetica, sans-serif; /* Depreciated */
 
 
 // BS_04 Variables
